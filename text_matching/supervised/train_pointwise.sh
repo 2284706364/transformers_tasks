@@ -11,3 +11,4 @@ python train_pointwise.py \
     --logging_steps 10 \
     --num_train_epochs 10 \
     --device "cuda:0"
+    
