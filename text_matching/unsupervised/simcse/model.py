@@ -136,7 +136,7 @@ class SimCSE(nn.Module):
 
         labels = torch.arange(                                      # 只有对角上为正例，其余全是负例，所以这个batch样本标签为 -> [0, 1, 2, ...]
             0, 
-            query_embedding.size()[0], 
+            query_embedding.size()[ 0], 
             dtype=torch.int64
         ).to(device)
         loss = self.criterion(cos_sim, labels)
